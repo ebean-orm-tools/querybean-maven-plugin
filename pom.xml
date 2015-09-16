@@ -4,7 +4,7 @@
 
   <groupId>org.avaje.ebeanorm</groupId>
   <artifactId>typequery-maven-plugin</artifactId>
-  <version>1.4.1</version>
+  <version>1.4.2-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
 
   <parent>
@@ -17,7 +17,7 @@
     <connection>scm:git:https://github.com/ebean-orm/typequery-maven-enhancer.git</connection>
     <developerConnection>scm:git:https://github.com/ebean-orm/typequery-maven-enhancer.git</developerConnection>
     <url>https://github.com/ebean-orm/typequery-maven-enhancer.git</url>
-    <tag>typequery-maven-plugin-1.4.1</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <dependencies>
