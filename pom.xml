@@ -4,7 +4,7 @@
 
   <groupId>org.avaje.ebeanorm</groupId>
   <artifactId>typequery-maven-plugin</artifactId>
-  <version>1.4.2-SNAPSHOT</version>
+  <version>1.5.1-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
 
   <parent>
@@ -25,7 +25,7 @@
     <dependency>
       <groupId>org.avaje.ebeanorm</groupId>
       <artifactId>avaje-ebeanorm-typequery-agent</artifactId>
-      <version>1.4.1</version>
+      <version>1.5.1</version>
     </dependency>
 
     <dependency>
