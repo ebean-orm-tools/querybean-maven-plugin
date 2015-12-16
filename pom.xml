@@ -3,8 +3,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.avaje.ebeanorm</groupId>
-  <artifactId>typequery-maven-plugin</artifactId>
-  <version>1.5.2-SNAPSHOT</version>
+  <artifactId>querybean-maven-plugin</artifactId>
+  <version>2.1.1-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
 
   <parent>
@@ -14,9 +14,9 @@
   </parent>
 
   <scm>
-    <connection>scm:git:https://github.com/ebean-orm/typequery-maven-enhancer.git</connection>
-    <developerConnection>scm:git:https://github.com/ebean-orm/typequery-maven-enhancer.git</developerConnection>
-    <url>https://github.com/ebean-orm/typequery-maven-enhancer.git</url>
+    <connection>scm:git:https://github.com/ebean-orm/querybean-maven-enhancer.git</connection>
+    <developerConnection>scm:git:https://github.com/ebean-orm/querybean-maven-enhancer.git</developerConnection>
+    <url>https://github.com/ebean-orm/querybean-maven-enhancer.git</url>
     <tag>HEAD</tag>
   </scm>
 
@@ -24,8 +24,8 @@
 
     <dependency>
       <groupId>org.avaje.ebeanorm</groupId>
-      <artifactId>avaje-ebeanorm-typequery-agent</artifactId>
-      <version>1.5.1</version>
+      <artifactId>querybean-agent</artifactId>
+      <version>2.1.1</version>
     </dependency>
 
     <dependency>
