@@ -7,7 +7,7 @@ import org.apache.maven.plugins.annotations.LifecyclePhase;
 import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.maven.plugins.annotations.ResolutionScope;
-import org.avaje.ebean.typequery.agent.Transformer;
+import org.avaje.ebean.typequery.agent.QueryBeanTransformer;
 import org.avaje.ebean.typequery.agent.offline.OfflineFileTransform;
 
 import java.io.File;
@@ -74,7 +74,7 @@ public class MavenEnhanceTask extends AbstractMojo {
     }
 
     ClassLoader classLoader = buildClassLoader();
-    Transformer transformer = new Transformer(transformArgs, classLoader, null);
+    QueryBeanTransformer transformer = new QueryBeanTransformer(transformArgs, classLoader, null);
 
     log.info("classSource=" + classSource + "  transformArgs=" + transformArgs + " packages=" + packages + " classPathSize:" + compileClasspathElements.size());
 
