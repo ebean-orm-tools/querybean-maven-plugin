@@ -103,7 +103,7 @@ public class MavenEnhanceTask extends AbstractMojo {
   private URL[] buildClassPath() {
 
     try {
-      List<URL> urls = new ArrayList<>(compileClasspathElements.size()+1);
+      List<URL> urls = new ArrayList<>(compileClasspathElements.size() + 1);
 
       Log log = getLog();
 
@@ -113,10 +113,10 @@ public class MavenEnhanceTask extends AbstractMojo {
         }
         urls.add(new File(element).toURI().toURL());
       }
-      // Add also classSource to classPath
-      URL classSourceUrl =new File(classSource).toURI().toURL();
+      // also add classSource to classPath
+      URL classSourceUrl = new File(classSource).toURI().toURL();
       if (!urls.contains(classSourceUrl)) {
-    	  urls.add(classSourceUrl);
+        urls.add(classSourceUrl);
       }
       return urls.toArray(new URL[urls.size()]);
 
