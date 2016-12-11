@@ -2,9 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.avaje.ebean</groupId>
+  <groupId>io.ebean</groupId>
   <artifactId>querybean-maven-plugin</artifactId>
-  <version>8.2.2-SNAPSHOT</version>
+  <version>10.1.1-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
 
   <parent>
@@ -14,18 +14,16 @@
   </parent>
 
   <scm>
-    <connection>scm:git:https://github.com/ebean-orm/querybean-maven-enhancer.git</connection>
-    <developerConnection>scm:git:https://github.com/ebean-orm/querybean-maven-enhancer.git</developerConnection>
-    <url>https://github.com/ebean-orm/querybean-maven-enhancer.git</url>
+    <developerConnection>scm:git:git@github.com:ebean-orm/querybean-maven-enhancer.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
   <dependencies>
 
     <dependency>
-      <groupId>org.avaje.ebean</groupId>
+      <groupId>io.ebean</groupId>
       <artifactId>querybean-agent</artifactId>
-      <version>8.2.1</version>
+      <version>10.1.1</version>
     </dependency>
 
     <dependency>
