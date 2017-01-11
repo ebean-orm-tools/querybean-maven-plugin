@@ -6,6 +6,8 @@ import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 import org.apache.maven.plugins.annotations.ResolutionScope;
 
+import java.io.File;
+
 /**
  * Perform query bean enhancement on classes in src/main.
  */
@@ -16,7 +18,10 @@ public class MavenTestEnhanceTask extends BaseEnhanceTask {
   String testClassSource;
 
   public void execute() throws MojoExecutionException {
-    executeFor(testClassSource);
+    File testOutDir = new File(testClassSource);
+    if (testOutDir.exists()) {
+      executeFor(testClassSource);
+    }
   }
 
 }
